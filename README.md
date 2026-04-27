@@ -2,7 +2,7 @@
 
 **Auteurs :** Sibrecht van Hovell – Victor Miclea
 **Cours :** EE208 – Microcontrôleurs et systèmes numériques  
-**Groupe :** GXXX  
+**Groupe :** 16  
 
 ---
 
