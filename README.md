@@ -1,4 +1,4 @@
-﻿# MCU2026-GXXX – Jeu Dino interactif sur ATmega128
+﻿# Jeu Dino interactif sur ATmega128
 
 **Auteurs :** Sibrecht van Hovell – Victor Miclea
 **Cours :** EE208 – Microcontrôleurs et systèmes numériques  
