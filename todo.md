@@ -1,0 +1,4 @@
+- Make a dino (section 8.10)
+- Make music work fine
+- Understand perfectly code
+- Make all the needed documentation
