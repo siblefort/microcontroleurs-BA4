@@ -22,6 +22,7 @@
 
 .include "macros.asm"
 .include "definitions.asm"
+.include "lcd.asm"
 
 .equ T1 = 1870
 
@@ -88,8 +89,6 @@ reset:
     rcall   show_main_menu
     rjmp    main
 
-.include "lcd.asm"
-
 ; ============================================================
 ; MAIN MENU LOOP
 ; ============================================================
@@ -111,6 +110,7 @@ main:
 ; ------------------------------------------------------------
 ; RC5 BUTTON READER, same logic as course ir_rc5.asm
 ; result: b0 = command
+; Dans le livre section 13.6.1
 ; ------------------------------------------------------------
 read_rc5_button:
     CLR2    b1,b0
@@ -130,6 +130,7 @@ read_rc5_loop:
 
 ; ============================================================
 ; MENU HANDLERS
+; ON change state_s à ce moment la du code car les valeurs lues par la télécommmande ne ont pas forcément des state
 ; ============================================================
 handle_menu:
     cpi     b0,0x01
