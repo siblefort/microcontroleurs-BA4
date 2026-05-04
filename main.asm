@@ -110,6 +110,7 @@ main:
 ; ------------------------------------------------------------
 ; RC5 BUTTON READER, same logic as course ir_rc5.asm
 ; result: b0 = command
+; Dans le livre section 13.6.1
 ; ------------------------------------------------------------
 read_rc5_button:
     CLR2    b1,b0
