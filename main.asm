@@ -130,6 +130,7 @@ read_rc5_loop:
 
 ; ============================================================
 ; MENU HANDLERS
+; ON change state_s à ce moment la du code car les valeurs lues par la télécommmande ne ont pas forcément des state
 ; ============================================================
 handle_menu:
     cpi     b0,0x01
