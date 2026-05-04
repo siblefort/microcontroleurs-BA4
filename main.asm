@@ -885,7 +885,7 @@ leds_2:
     ldi     w,0x03
     rjmp    leds_out
 leds_3:
-    ldi     w,0x07
+    ldi     w,0b11111001
 leds_out:
     out     PORTB,w
     ret
