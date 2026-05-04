@@ -67,7 +67,7 @@ reset:
 
     ; LEDs output
     OUTI    DDRB,0xff
-    OUTI    PORTB,0x00
+    OUTI    PORTB,0xff
 
     ; PORTE: speaker output, IR input with pull-up
     in      w,DDRE
@@ -880,13 +880,13 @@ update_leds:
     ldi     w,0x00
     rjmp    leds_out
 leds_1:
-    ldi     w,0x01
+    ldi     w,0xfe
     rjmp    leds_out
 leds_2:
-    ldi     w,0x03
+    ldi     w,0xfc
     rjmp    leds_out
 leds_3:
-    ldi     w,0b11111001
+    ldi     w,0xfe
 leds_out:
     out     PORTB,w
     ret
