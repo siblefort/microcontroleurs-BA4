@@ -22,6 +22,7 @@
 
 .include "macros.asm"
 .include "definitions.asm"
+.include "lcd.asm"
 
 .equ T1 = 1870
 
@@ -87,8 +88,6 @@ reset:
 
     rcall   show_main_menu
     rjmp    main
-
-.include "lcd.asm"
 
 ; ============================================================
 ; MAIN MENU LOOP
